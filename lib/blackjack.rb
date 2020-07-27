@@ -41,7 +41,11 @@ def hit?(current_total)
     new_total += deal_card
     display_card_total(new_total)
   elsif input == "s"
+<<<<<<< HEAD
      new_total
+=======
+     hit?(new_total)
+>>>>>>> 0d453f353316b5a87281534641c9e3c6668bfe07
   else
      invalid_command
      hit?(current_total)
@@ -55,6 +59,7 @@ end
 #####################################################
 
 def runner
+<<<<<<< HEAD
   welcome
   total = initial_round
   while total < 21 do 
@@ -62,6 +67,16 @@ def runner
   end 
   if total >= 21
    end_game(total)
+=======
+  total = 0
+  welcome
+  initial_round
+  while total < 21 do 
+    hit?(total)
+  end 
+  if total >= 21
+   end_game
+>>>>>>> 0d453f353316b5a87281534641c9e3c6668bfe07
   end
 end
     
